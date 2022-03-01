@@ -1,7 +1,7 @@
 import math
 
 
-def check_equality():  # function to take input and compute the length of the line
+def compare_to():  # function to take input and compute the length of the line
     x1 = 2  # input
     y1 = 3  # input
     x2 = 4  # input
@@ -17,15 +17,17 @@ def check_equality():  # function to take input and compute the length of the li
 
     res2 = math.sqrt(((p2 - p1) ** 2) + ((q2 - q1) ** 2))  # computation
     print("\nThe required length is:", res2)
-
+    print()
+    
+    comp = int((res1 - res2))
     if res1 == res2:
-        print("Lines are equal")
-    elif res1 > res2:
-        print("First line is longer")
+        print(comp)
+    elif res1 > res2:               # Comparison
+        print(comp)
     else:
-        print("Second line is longer")
+        print(comp)
 
 
 # Driver Code
 if __name__ == '__main__':
-    check_equality()  # function calling
+    compare_to()  # function calling
